@@ -7,6 +7,7 @@
     <title>Homepage</title>
 </head>
 <body>
+
     @foreach ($posts as $post) 
         <div class="post-container">
             <div>{{$post->username}}</div>
