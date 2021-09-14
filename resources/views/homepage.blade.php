@@ -1,19 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Homepage</title>
-</head>
-<body>
+@extends('templates.structure')
 
+@section('main')
+
+<div class="container">
     @foreach ($posts as $post) 
-        <div class="post-container">
-            <div>{{$post->username}}</div>
-            <img src="{{$post->image}}" alt="image">
-            <p>{{$post->caption}}</p>
+    <div class="row">
+        <div class="post-container col">
+            <h2>{{$post->title}}</h2>
+            <div>By {{$post->username}}</div>
+            <p>{{$post->summary}}</p>
+            <div class="text-right">{{$post->position}}</div>
+            <div class="text-right"><a href="http://">Read more..</a></div>
+            {{-- <img src="{{$post->image}}" alt="image"> --}}
+            {{-- <p>{{$post->caption}}</p> --}}
         </div>
+        
+    </div>
     @endforeach
-</body>
-</html>
+</div>
+
+@endsection
+
+

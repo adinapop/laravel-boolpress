@@ -21,11 +21,3 @@
     </div>
 </div>
 @endsection
-
-@foreach ($posts as $post) 
-<div class="post-container">
-    <div>{{$post->username}}</div>
-    <img src="{{$post->image}}" alt="image">
-    <p>{{$post->caption}}</p>
-</div>
-@endforeach

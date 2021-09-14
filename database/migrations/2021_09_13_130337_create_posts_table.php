@@ -19,6 +19,10 @@ class CreatePostsTable extends Migration
             $table->text('caption');
             $table->text('image');
             $table->string('position', 255);
+            $table->string('title', 150);
+            $table->string('name', 50);
+            $table->string('surname', 50);
+            $table->text('summary');
             $table->timestamps();
         });
     }
