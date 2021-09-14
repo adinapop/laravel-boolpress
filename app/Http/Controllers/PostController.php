@@ -47,7 +47,9 @@ class PostController extends Controller
      */
     public function show($id)
     {
-        //
+        $post = Post::find($id);
+        // richiama automaticamente la pagina del singolo post attraverso show e gli passo come arogmento l'id del singolo post
+        return view('posts.show', compact('post'));
     }
 
     /**

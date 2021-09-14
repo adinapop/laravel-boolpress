@@ -7,12 +7,10 @@
     <div class="row">
         <div class="post-container col">
             <h2>{{$post->title}}</h2>
-            <div>By {{$post->username}}</div>
+            <div><span>@</span>{{$post->username}}</div>
             <p>{{$post->summary}}</p>
             <div class="text-right">{{$post->position}}</div>
-            <div class="text-right"><a href="http://">Read more..</a></div>
-            {{-- <img src="{{$post->image}}" alt="image"> --}}
-            {{-- <p>{{$post->caption}}</p> --}}
+            <div class="text-right"><a href="{{ route('posts.show', $post) }}">Read more..</a></div>
         </div>
         
     </div>
