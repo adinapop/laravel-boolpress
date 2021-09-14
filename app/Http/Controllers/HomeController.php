@@ -28,12 +28,7 @@ class HomeController extends Controller
 
         // metterlo solo nel metodo che vogliamo "chiuso"/protetto
         $user = Auth::user();
+        return view('home');
 
-        if(empty($user)) {
-            return 'You must be logged';
-        }
-
-        $posts = Post::all();
-        return view('homepage', compact('posts'));
     }
 }

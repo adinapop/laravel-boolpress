@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Post;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,8 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', 'HomeController@index')->name('homepage');
-
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index');
+
+// metodo resource di Laravel che genera tutte le rotte necessari per le crud 
+Route::resource('posts', 'PostController');
