@@ -15,7 +15,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        // $this->middleware('auth');
     }
 
     /**
@@ -28,7 +28,8 @@ class HomeController extends Controller
 
         // metterlo solo nel metodo che vogliamo "chiuso"/protetto
         $user = Auth::user();
-        return view('home');
+        
+        return view('homepage');
 
     }
 }
