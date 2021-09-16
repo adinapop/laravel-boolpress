@@ -10942,3 +10942,73 @@ a.text-dark:focus {
   }
 }
 
+.homepage-header {
+  background-color: #bd7b7b;
+}
+
+.homepage-header .container .text-center {
+  padding: 60px;
+  font-size: 40px;
+  color: #424242;
+}
+
+.homepage-header .container .text-center div {
+  padding: 24px;
+  font-size: 60px;
+  font-style: oblique;
+}
+
+.homepage-header .container .users-posts,
+.homepage-header .container .create-post {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.homepage-header .container .users-posts .content,
+.homepage-header .container .create-post .content {
+  background-color: #0005;
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 32px 0;
+}
+
+.homepage-header .container .users-posts .content :hover,
+.homepage-header .container .create-post .content :hover {
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.homepage-header .container .users-posts .content a,
+.homepage-header .container .create-post .content a {
+  color: #424242;
+  font-size: 32px;
+}
+
+.homepage-header .container .users-posts .content a :hover,
+.homepage-header .container .create-post .content a :hover {
+  font-size: 44px;
+}
+
+.all-posts {
+  background-color: #bd7b7b;
+}
+
+.all-posts .container .index-container {
+  padding-top: 60px;
+}
+
+.all-posts .container .index-container .post-container {
+  padding: 24px;
+}
+
+.all-posts .container .index-container .post-container .content {
+  height: 250px;
+  padding: 60px;
+  border-radius: 24px;
+  background-color: #edadad;
+}
+
+.all-posts .container .index-container .post-container .content .link-route {
+  color: #828181;
+}
+

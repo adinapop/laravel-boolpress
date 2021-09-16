@@ -1,0 +1,26 @@
+.all-posts {
+    background-color: #bd7b7b;
+
+    .container {
+
+        .index-container {
+            padding-top: 60px;
+
+            .post-container {
+                padding: 24px;
+
+                .content {
+                    height: 250px;
+                    padding: 60px;
+                    border-radius: 24px;
+                    background-color: #edadad;
+
+                    .link-route {
+                        color: #828181;
+                    }
+
+                }
+            }
+        }
+    }
+}

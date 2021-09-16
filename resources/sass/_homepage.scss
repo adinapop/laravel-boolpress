@@ -1,0 +1,43 @@
+.homepage-header {
+    background-color: #bd7b7b;
+
+    .container {
+
+        .text-center {
+            padding: 60px;
+            font-size: 40px;
+            color: #424242;
+    
+            div {
+                padding: 24px;
+                font-size: 60px;
+                font-style: oblique;
+            }
+        }
+    
+        .users-posts, .create-post {
+            text-align: center;
+            vertical-align: middle;
+            
+            .content {
+                background-color: #0005;
+                border: 1px solid black;
+                border-radius: 12px;
+                padding: 32px 0;
+    
+                :hover {
+                    cursor: pointer;
+                    border: 1px solid transparent;
+                }
+    
+                a {
+                    color: #424242;
+                    font-size: 32px;
+    
+                    :hover {font-size: 44px;}
+                }
+            }
+        }
+    }
+        
+}
