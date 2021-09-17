@@ -1,43 +1,126 @@
-.homepage-header {
-    background-color: #bd7b7b;
+.welcome-container {
+    // margin-top: 48px;
 
-    .container {
-
-        .text-center {
-            padding: 60px;
-            font-size: 40px;
-            color: #424242;
+    .image-box {
+        display: flex;
+        justify-content: center;
+        padding: 36px 0;
+    
+        .inner-img-box {
+            
+            img {
+                width: 100%;
+                border-radius: 20px;
+            }
+        }
+    }
+    
+    .welcome-box {
+        color: #1f1f1f;
+        text-align: center;
+    
+        h1 {
+            font-size: 36px;
     
             div {
-                padding: 24px;
                 font-size: 60px;
                 font-style: oblique;
             }
         }
     
-        .users-posts, .create-post {
-            text-align: center;
-            vertical-align: middle;
-            
-            .content {
-                background-color: #0005;
-                border: 1px solid black;
-                border-radius: 12px;
-                padding: 32px 0;
-    
-                :hover {
-                    cursor: pointer;
-                    border: 1px solid transparent;
-                }
-    
-                a {
-                    color: #424242;
-                    font-size: 32px;
-    
-                    :hover {font-size: 44px;}
-                }
+        div {font-size: 16px;}
+
+        button {
+            background-color: blanchedalmond;
+            border: 1px solid #d9c9bc;
+            border-radius: 20px;
+            padding: 6px 24px;
+            font-size: 16px;
+            margin-top: 48px;
+            opacity: 0.8;
+        }
+    }
+}
+
+.button-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9c9bc;
+
+    div {
+        padding: 60px 0;
+
+        button {
+            font-size: 36px;
+            padding: 6px 36px;
+            background-color: transparent;
+            border: none;
+
+            :hover {
+                text-decoration: none;
+                color: black;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                color: #1f1f1f;
+
+                i {padding-left: 36px;}
             }
         }
     }
+}
+
+.services-container {
+    margin-bottom: 24px;
+
+    h1 {
+        font-size: 48px;
+        padding: 24px 0;
+        border-bottom: 2px solid #1f1f1f;
+    }
+
+    .single-service {
+        display: flex;
+        align-items: center;
+        padding: 12px 48px;
+    }
+
+    i {
+        color: #1f1f1f;
+        font-size: 24px;
+        background-color: #d9c9bc;
+        border-radius: 100%;
+        padding: 24px;
+        margin-right: 24px;
+    }
+}
+
+.container-themes {
+    background-color: #d9c9bc;
+
+    .themes, .others-post {
+        text-align: center; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-style: oblique;
+        padding: 24px 0;
+        border-left: 2px solid #707070;
+        border-radius: 20px;
+        margin-top: 24px;
         
+        h4 {
+            font-size: 30px;
+            color: #707070;
+        }
+
+        i {
+            color: #707070;
+            font-size: 30px;
+            padding-left: 24px;
+        }
+    }
 }

@@ -3,7 +3,6 @@
 @section('form')
     <div class="container">
         <form action="{{ route('posts.store')}}" method="post">
-
             @csrf
 
             <label for="name">Name</label>
@@ -27,11 +26,13 @@
             <label for="position">Position</label>
             <input type="text" class="form-control" name="position" id="position">
 
-            <label for="image">Add image</label>
-            <input type="file" name="image" id="image">
-            
+            <div class="mt-3 mb-3">
+                <label for="image">Add image:</label>
+                <input type="file" name="image" id="image">
+            </div>
+
             <div>
-                <button type="submit" class="btn btn-primary mt-4" type="submit">Create post</button>
+                <button type="submit" class="btn btn-dark mb-5" type="submit">Create post</button>
             </div>
 
         </form>

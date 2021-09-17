@@ -31,6 +31,9 @@
         @yield('form')
     </section>
 
+    <footer class="footer-container">
+        @include('templates.footer')
+    </footer>
     
 </body>
 </html>

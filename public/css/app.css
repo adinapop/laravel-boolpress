@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap);@charset "UTF-8";
 
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
@@ -10942,51 +10942,148 @@ a.text-dark:focus {
   }
 }
 
-.homepage-header {
-  background-color: #bd7b7b;
+.nav-cont {
+  background-color: #d9c9bc;
 }
 
-.homepage-header .container .text-center {
-  padding: 60px;
-  font-size: 40px;
-  color: #424242;
+.nav-cont .logo-nav {
+  width: 60px;
 }
 
-.homepage-header .container .text-center div {
-  padding: 24px;
+.nav-cont .logo-nav img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+ul li {
+  cursor: pointer;
+}
+
+.welcome-container .image-box {
+  display: flex;
+  justify-content: center;
+  padding: 36px 0;
+}
+
+.welcome-container .image-box .inner-img-box img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.welcome-container .welcome-box {
+  color: #1f1f1f;
+  text-align: center;
+}
+
+.welcome-container .welcome-box h1 {
+  font-size: 36px;
+}
+
+.welcome-container .welcome-box h1 div {
   font-size: 60px;
   font-style: oblique;
 }
 
-.homepage-header .container .users-posts,
-.homepage-header .container .create-post {
+.welcome-container .welcome-box div {
+  font-size: 16px;
+}
+
+.welcome-container .welcome-box button {
+  background-color: blanchedalmond;
+  border: 1px solid #d9c9bc;
+  border-radius: 20px;
+  padding: 6px 24px;
+  font-size: 16px;
+  margin-top: 48px;
+  opacity: 0.8;
+}
+
+.button-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9c9bc;
+}
+
+.button-box div {
+  padding: 60px 0;
+}
+
+.button-box div button {
+  font-size: 36px;
+  padding: 6px 36px;
+  background-color: transparent;
+  border: none;
+}
+
+.button-box div button :hover {
+  text-decoration: none;
+  color: black;
+}
+
+.button-box div button a {
+  display: flex;
+  align-items: center;
+  color: #1f1f1f;
+}
+
+.button-box div button a i {
+  padding-left: 36px;
+}
+
+.services-container {
+  margin-bottom: 24px;
+}
+
+.services-container h1 {
+  font-size: 48px;
+  padding: 24px 0;
+  border-bottom: 2px solid #1f1f1f;
+}
+
+.services-container .single-service {
+  display: flex;
+  align-items: center;
+  padding: 12px 48px;
+}
+
+.services-container i {
+  color: #1f1f1f;
+  font-size: 24px;
+  background-color: #d9c9bc;
+  border-radius: 100%;
+  padding: 24px;
+  margin-right: 24px;
+}
+
+.container-themes {
+  background-color: #d9c9bc;
+}
+
+.container-themes .themes,
+.container-themes .others-post {
   text-align: center;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: oblique;
+  padding: 24px 0;
+  border-left: 2px solid #707070;
+  border-radius: 20px;
+  margin-top: 24px;
 }
 
-.homepage-header .container .users-posts .content,
-.homepage-header .container .create-post .content {
-  background-color: #0005;
-  border: 1px solid black;
-  border-radius: 12px;
-  padding: 32px 0;
+.container-themes .themes h4,
+.container-themes .others-post h4 {
+  font-size: 30px;
+  color: #707070;
 }
 
-.homepage-header .container .users-posts .content :hover,
-.homepage-header .container .create-post .content :hover {
-  cursor: pointer;
-  border: 1px solid transparent;
-}
-
-.homepage-header .container .users-posts .content a,
-.homepage-header .container .create-post .content a {
-  color: #424242;
-  font-size: 32px;
-}
-
-.homepage-header .container .users-posts .content a :hover,
-.homepage-header .container .create-post .content a :hover {
-  font-size: 44px;
+.container-themes .themes i,
+.container-themes .others-post i {
+  color: #707070;
+  font-size: 30px;
+  padding-left: 24px;
 }
 
 .all-posts {
@@ -11010,5 +11107,14 @@ a.text-dark:focus {
 
 .all-posts .container .index-container .post-container .content .link-route {
   color: #828181;
+}
+
+.footer-container {
+  height: 90px;
+  background-color: #382f2d;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
 }
 
