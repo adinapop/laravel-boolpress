@@ -18,7 +18,7 @@
     <div id="app">
         <nav class="nav-cont navbar navbar-expand-md navbar-light shadow-sm">
             <div class="logo-nav">
-                <img src="./img/logo.jpg" alt="">
+                <img src="./img/logo.jpg" alt="Logo">
             </div>
             <div class="container">
                 

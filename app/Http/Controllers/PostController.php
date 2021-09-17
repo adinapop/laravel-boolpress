@@ -49,7 +49,6 @@ class PostController extends Controller
         $newPost->save();
 
         return redirect()->route('posts.show', $newPost->id);
-
     }
 
     /**
@@ -71,9 +70,11 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+
+    // devo pasare il record che voglio editare (di default è l'id)
+    public function edit(Post $post)
     {
-        //
+        return view('posts.edit', compact('post'));
     }
 
     /**
@@ -83,9 +84,26 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+
+    // non id, ma il record che si vuole editare (anche qui, di default l'id)
+    public function update(Request $request, Post $post)
     {
-        //
+        $data = $request->all(); // request for all, that return an associative array
+        $this->fillAndSave($post, $data);
+
+        return redirect()->route('posts.show', $post); // sempre nella view show 
+    }
+
+    private function fillAndSave(Post $post, $data) {
+        $post->name = $data['name'];
+        $post->surname = $data['surname'];
+        $post->username = $data['username'];
+        $post->title = $data['title'];
+        $post->caption = $data['caption'];
+        $post->summary = $data['summary'];
+        $post->position = $data['position'];
+        $post->image = $data['image'];
+        $post->save();
     }
 
     /**

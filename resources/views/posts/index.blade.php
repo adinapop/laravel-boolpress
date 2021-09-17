@@ -8,6 +8,10 @@
 
         <div class="post-container col-6">
             <div class="content">
+                <a href="{{ route('posts.edit', $post) }}">
+                    <i class="fas fa-user-edit"></i>
+                </a>
+
                 <h2>{{$post->title}}</h2>
                 <div><span>@</span>{{$post->username}}</div>
                 <p>{{$post->summary}}</p>

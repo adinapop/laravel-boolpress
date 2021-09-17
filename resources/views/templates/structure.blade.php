@@ -31,6 +31,10 @@
         @yield('form')
     </section>
 
+    <section>
+        @yield('editPost')
+    </section>
+
     <footer class="footer-container">
         @include('templates.footer')
     </footer>
