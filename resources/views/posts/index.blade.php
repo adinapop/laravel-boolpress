@@ -8,9 +8,19 @@
 
         <div class="post-container col-6">
             <div class="content">
-                <a href="{{ route('posts.edit', $post) }}">
-                    <i class="fas fa-user-edit"></i>
-                </a>
+
+                <div class="d-flex align-items-center justify-content-end">
+                    <a href="{{ route('posts.edit', $post) }}">
+                        <i class="fas fa-user-edit pr-4"></i>
+                    </a>
+    
+                    <form action="{{ route('posts.destroy', $post) }}" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class=""><i class="fas fa-trash"></i></button>
+                    </form>
+                </div>
+
 
                 <h2>{{$post->title}}</h2>
                 <div><span>@</span>{{$post->username}}</div>

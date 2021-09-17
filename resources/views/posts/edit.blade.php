@@ -3,7 +3,6 @@
 @section('editPost')
 
     <div class="container">
-        <div class="row">
             
             {{-- quello che si edita, va nella rotta update --}}
             <form action="{{ route('posts.update', $post) }}" method="POST">
@@ -42,7 +41,6 @@
                 </div>
     
             </form>
-        </div>
 
     </div>
     
