@@ -11095,6 +11095,22 @@ ul li {
   background-color: #5c2b2c;
 }
 
+.all-posts .container .access {
+  padding: 6px 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+.all-posts .container .access a {
+  color: whitesmoke;
+  opacity: 0.6;
+}
+
+.all-posts .container .access :hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
 .all-posts .container h1 {
   padding: 24px 0;
   color: #d9c9bc;

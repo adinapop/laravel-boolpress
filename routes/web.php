@@ -17,6 +17,6 @@ use App\Post;
 
 Auth::routes();
 
-Route::get('/', 'HomeController@index')->name('homepage');
+Route::get('/', 'HomeController@index')->name('home');
 
 Route::resource('posts', 'PostController');

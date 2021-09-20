@@ -3,6 +3,13 @@
 @section('main')
 
 <div class="container">
+
+    @if (!Auth::check())
+        <div class="access">
+            <a href="{{ route('login') }}">{{ __('Devi autentificarti per poter modificare o cancellare un post') }}</a>
+        </div>
+    @endif
+
     <h1>I post degli altri utenti</h1>
     
     <div class="row">
@@ -14,15 +21,22 @@
 
                     <div class="d-flex align-items-center justify-content-end">
 
-                        <a href="{{ route('posts.edit', $post) }}">
-                            <i class="far fa-edit"></i>
-                        </a>
+                        {{-- IF... --}}
+                        @if (Auth::check())
+
+                            {{-- ...the user is logged in, show the edit and delete buttons --}}
+
+                            <a href="{{ route('posts.edit', $post) }}">
+                                <i class="far fa-edit"></i>
+                            </a>
+                            
+                            <form action="{{ route('posts.destroy', $post) }}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class=""><i class="far fa-trash-alt"></i></button>
+                            </form>
+                        @endif
         
-                        <form action="{{ route('posts.destroy', $post) }}" method="POST">
-                            @csrf
-                            @method('DELETE')
-                            <button type="submit" class=""><i class="far fa-trash-alt"></i></button>
-                        </form>
 
                     </div>
 

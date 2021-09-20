@@ -11,12 +11,10 @@
 </head>
 <body>
 
-    <nav>
-        @include('layouts.app')
-    </nav>
+    @include('layouts.app')
 
     <header class="homepage-header">
-        @yield('header')
+        @yield('content')
     </header>
 
     <main class="all-posts">

@@ -1,6 +1,6 @@
-@extends('templates.structure')
+{{-- @extends('templates.structure')
 
-@section('header')
+@section('content')
     <div class="container welcome-container">
         <div class="row align-items-center">
             <div class="image-box col-6">
@@ -81,4 +81,4 @@
             </div>
         </div>
     </div>
-@endsection
+@endsection --}}
