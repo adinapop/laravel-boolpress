@@ -11126,6 +11126,34 @@ ul li {
   color: #828181;
 }
 
+.single-posts {
+  background-color: #d9c9bc;
+}
+
+.single-posts .container {
+  background-color: whitesmoke;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.08);
+}
+
+.single-posts .container .content h1 {
+  margin: 24px 0;
+  font-weight: bolder;
+}
+
+.single-posts .container .content .togh-cont {
+  display: flex;
+  justify-content: space-between;
+}
+
+.single-posts .container .content .togh-cont .user-cont div,
+.single-posts .container .content .togh-cont .user-cont h4 {
+  padding: 6px 0;
+}
+
+.single-posts .container .content .togh-cont .user-cont h4 {
+  font-style: oblique;
+}
+
 * {
   font-family: "Montserrat", sans-serif;
 }

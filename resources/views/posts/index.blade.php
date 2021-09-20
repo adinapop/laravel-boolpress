@@ -3,7 +3,7 @@
 @section('main')
 
 <div class="container">
-    <h1>I post degli altri</h1>
+    <h1>I post degli altri utenti</h1>
     
     <div class="row">
 

@@ -1,0 +1,29 @@
+.single-posts {
+    background-color: #d9c9bc;
+
+    .container {
+        background-color: whitesmoke;
+        box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+
+        .content {
+            h1 {
+                margin: 24px 0;
+                font-weight: bolder;
+            }
+    
+            .togh-cont {
+                display: flex;
+                justify-content: space-between;
+    
+                .user-cont {
+                    div, h4 {
+                        padding: 6px 0;
+                    }
+    
+                    h4 {font-style: oblique;}
+                }
+            }
+        }
+    }
+
+}

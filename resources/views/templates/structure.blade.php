@@ -23,7 +23,7 @@
         @yield('main')
     </main>
 
-    <main>
+    <main class="single-posts">
         @yield('singlePost')
     </main>
 
