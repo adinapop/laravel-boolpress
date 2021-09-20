@@ -1,26 +1,38 @@
 .all-posts {
-    background-color: #bd7b7b;
+    background-color: #5c2b2c;
 
     .container {
 
-        .index-container {
-            padding-top: 60px;
+        h1 {
+            padding: 24px 0;
+            color: #d9c9bc;
+            font-weight: bolder;
+            text-align: end;
+        }
 
-            .post-container {
+        .post-container {
+            display: flex;
+            
+            .inner-content {
+                background-color: #d9c9bc;
+                border-radius: 24px;
                 padding: 24px;
+                margin: 12px 0;
 
-                .content {
-                    height: 250px;
-                    padding: 60px;
-                    border-radius: 24px;
-                    background-color: #edadad;
+                .fa-edit {
+                    color: black;
+                }
 
-                    .link-route {
-                        color: #828181;
-                    }
+                button {
+                    background-color: transparent;
+                    border: none;
+                }
 
+                .link-route {
+                    color: #828181;
                 }
             }
+
         }
     }
 }

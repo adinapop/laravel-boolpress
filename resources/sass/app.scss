@@ -1,5 +1,6 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 
 // Variables
 @import 'variables';
@@ -12,3 +13,7 @@
 @import 'footer';
 @import 'all-posts';
 @import 'single-post';
+
+* {
+    font-family: "Montserrat", sans-serif;
+  }
