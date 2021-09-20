@@ -11077,7 +11077,7 @@ a.text-dark:focus {
   width: 60px;
 }
 
-.nav-cont .logo-nav img {
+.nav-cont .logo-nav a img {
   width: 100%;
   border-radius: 100%;
 }
@@ -11133,7 +11133,7 @@ ul li {
   color: black;
 }
 
-.all-posts .container .post-container .inner-content button {
+.all-posts .container .post-container .inner-content .trash {
   background-color: transparent;
   border: none;
 }

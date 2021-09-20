@@ -13,8 +13,11 @@
 <body>
     <div id="app">
         <nav class="nav-cont navbar navbar-expand-md navbar-light shadow-sm">
+            
             <div class="logo-nav">
-                <img src="./img/logo.jpg" alt="Logo">
+                <a href="{{ route('home') }}">
+                    <img src="./img/logo.jpg" alt="Logo">
+                </a>
             </div>
 
             <div class="container">

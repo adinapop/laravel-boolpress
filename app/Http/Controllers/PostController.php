@@ -42,18 +42,20 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        $data = $request->all(); // return an associative array
-        $newPost = new Post();
-        $newPost->name = $data['name'];
-        $newPost->surname = $data['surname'];
-        $newPost->username = $data['username'];
-        $newPost->title = $data['title'];
-        $newPost->caption = $data['caption'];
-        $newPost->summary = $data['summary'];
-        $newPost->position = $data['position'];
-        $newPost->image = $data['image'];
-        $newPost->save();
 
+        $request->validate([
+            'name' => 'required',
+            'surname' => 'required',
+            'username' => 'required',
+            'title' => 'required',
+            'caption' => 'required',
+            'summary' => 'required',
+            'position' => 'required',
+            'image' => 'required',
+        ]);
+
+        $newPost = new Post();
+        $this->fillAndSave($newPost, $request);
         return redirect()->route('posts.show', $newPost->id);
     }
 
