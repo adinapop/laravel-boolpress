@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use App\Post;
 
 class HomeController extends Controller
 {
@@ -15,7 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        // $this->middleware('auth');
+        $this->middleware('auth');
     }
 
     /**
@@ -25,11 +23,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-
-        // metterlo solo nel metodo che vogliamo "chiuso"/protetto
-        $user = Auth::user();
-        
         return view('homepage');
-
     }
 }

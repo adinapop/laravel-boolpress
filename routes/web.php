@@ -14,9 +14,9 @@ use App\Post;
 |
 */
 
+
 Auth::routes();
 
-Route::get('/', 'HomeController@index')->name('homepage');
+Route::get('/homepage', 'HomeController@index')->name('homepage');
 
-// metodo resource di Laravel che genera tutte le rotte necessari per le crud 
 Route::resource('posts', 'PostController');

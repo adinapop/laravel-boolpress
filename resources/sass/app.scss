@@ -7,15 +7,8 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-
-@import 'nav';
 @import 'homepage';
+@import 'nav';
+@import 'footer';
 @import 'all-posts';
 @import 'single-post';
-@import 'form';
-@import 'footer';
-
-* {
-    font-family: 'Montserrat', sans-serif;
-}
