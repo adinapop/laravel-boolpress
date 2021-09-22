@@ -111,6 +111,7 @@ class PostController extends Controller
         $post->summary = $data['summary'];
         $post->position = $data['position'];
         $post->image = $data['image'];
+        $post->category_id = $data['category_id'];
         $post->save();
     }
 
