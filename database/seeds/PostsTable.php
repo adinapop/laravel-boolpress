@@ -13,7 +13,6 @@ class PostsTable extends Seeder
      * @return void
      */
     public function run(Faker $faker) 
-
     {
         // la lista delle varie categorie dei post
         $categoryList = [
@@ -24,18 +23,12 @@ class PostsTable extends Seeder
             'food'
         ];
 
-        // creo un array di lista delle categorie vuote, che verrà popolatodall'id di ogni oggetto cat
         $listOfCatID = [];
 
-        // con il foreach ciclo dentro l'array lista delle categorie
         foreach($categoryList as $category) {
-            // creo un nuovo oggetto dal modello Category
             $catObj = new Category();
-            // il nome dell'oggetto sarà uguale a ogni proprietà della lista delle categorie
             $catObj->name = $category;
             $catObj->save();
-
-            // array popolato e non più vuoto
             $listOfCatID[] = $catObj->id;
         }
 
@@ -51,10 +44,8 @@ class PostsTable extends Seeder
             $postObj->surname = $faker->word(3);
             $postObj->summary = $faker->sentence(10);
 
-            // genero una chiave randomica per la categoria
             $randCatKey = array_rand($listOfCatID, 1);
             $categoryID = $listOfCatID[$randCatKey];
-            
             $postObj->category_id = $categoryID;
 
             $postObj->save();

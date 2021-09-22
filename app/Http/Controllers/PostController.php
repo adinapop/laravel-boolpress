@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Post;
+use App\Category;
 
 class PostController extends Controller
 {
@@ -31,7 +32,8 @@ class PostController extends Controller
      */
     public function create()
     {
-        return view('posts.create');
+        $categories = Category::all();
+        return view('posts.create', compact('categories'));
     }
 
     /**
@@ -102,19 +104,6 @@ class PostController extends Controller
         return redirect()->route('posts.show', $post); // sempre nella view show 
     }
 
-    private function fillAndSave(Post $post, $data) {
-        $post->name = $data['name'];
-        $post->surname = $data['surname'];
-        $post->username = $data['username'];
-        $post->title = $data['title'];
-        $post->caption = $data['caption'];
-        $post->summary = $data['summary'];
-        $post->position = $data['position'];
-        $post->image = $data['image'];
-        $post->category_id = $data['category_id'];
-        $post->save();
-    }
-
     /**
      * Remove the specified resource from storage.
      *
@@ -126,5 +115,18 @@ class PostController extends Controller
         $post->delete();
         
         return redirect()->route('posts.index');
+    }
+
+    private function fillAndSave(Post $post, $data) {
+        $post->name = $data['name'];
+        $post->surname = $data['surname'];
+        $post->username = $data['username'];
+        $post->title = $data['title'];
+        $post->caption = $data['caption'];
+        $post->summary = $data['summary'];
+        $post->position = $data['position'];
+        $post->image = $data['image'];
+        $post->category_id = $data['category_id'];
+        $post->save();
     }
 }
