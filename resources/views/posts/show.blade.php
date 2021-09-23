@@ -13,6 +13,7 @@
                     <div class="user-cont">
                         <h1>{{strtoupper($post->title)}}</h1>
                         <h4>By: {{ ucfirst($post->name) }} {{ ucfirst($post->surname) }} </h4>
+                        <p>Category: {{ $post->category->name }}</p>
                         <div><i class="fas fa-user"></i> {{ $post->username }}</div>
                         <div><i class="fas fa-map-marker-alt"></i> {{ ucfirst($post->position) }}</div>
                     </div>
